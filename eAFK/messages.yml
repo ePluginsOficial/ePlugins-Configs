@@ -1,0 +1,44 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  permission: '&cVocê não tem permissão para fazer isto.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  blocked-world: '&cVocê não pode ficar AFK neste mundo.'
+  set-local: '&aLocal do AFK definido na sua posicao atual.'
+  timer:
+    title: '&cVocê está AFK!<nl>&7Restam &e{time}&7.'
+    actionbar: ''
+    chat: [ '' ]
+    sound: ''
+  afk:
+    title: '&cVocê está AFK!<nl>&7Mova-se para retornar.'
+    actionbar: ''
+    chat: [ '' ]
+    sound: ''
+  blocked:
+    title: '&cVocê está AFK!<nl>&7Essa ação não pode ser realizada.'
+    actionbar: ''
+    chat: [ '' ]
+    sound: ''
+  help:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/afk <motivo> &8- &7Fica AFK com o motivo especificado.'
+    - ' &8> &a/afk help &8- &7Exibe esta mensagem.'
+    - ''
+  help-admin:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/afk <motivo> &8- &7Fica AFK com o motivo especificado.'
+    - ' &8> &a/afk setlocal &8- &7Seta o local do teleporte para jogadores AFK.'
+    - ' &8> &a/afk reload &8- &7Recarrega as configurações.'
+    - ' &8> &a/afk help &8- &7Exibe esta mensagem.'

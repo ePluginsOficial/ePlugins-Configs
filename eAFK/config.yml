@@ -1,0 +1,95 @@
+#         _   ___ _  __
+#   ___  /_\ | __| |/ /
+#  / -_)/ _ \| _|| ' <
+#  \___/_/ \_\_| |_|\_\
+#
+# By: Wittor_ (DC: _wittor ou Witu#7623)
+
+# General plugin options
+options:
+  # Tempo para checar se o jogador está afk
+  # Só será usado caso o jogador não tenha nenhuma permissão: eafk.time.<numero>
+  # Em segundos
+  time: 60
+
+  # Tempo em que manda a mensagem de messages.timer
+  # Só será usado caso o jogador não tenha nenhuma permissão: eafk.warn-time.<numero>
+  # Em segundos
+  warn-time: 20
+
+  # Placeholder pro papi %eafk_tag%
+  tag:
+    # Deixe '' (vazio) para não usar
+    afk: '&cJogador AFK'
+    # Deixe '' (vazio) para não usar
+    no-afk: ''
+
+  # Para evitar anti-afk com gelo
+  block-blacklist:
+    - 'ICE'
+    - 'PACKED_ICE'
+
+  # Onde o eAFK não irá intervir
+  world-blacklist:
+    - ''
+
+  # Anti-afk com soulsand, slab, neve e carpete
+  check-offsets:
+    - 0.0
+    - 1.0
+    - -1.0
+
+  # Ao hitar em algo sair do AFK
+  quit-on-hit: false
+
+  # Dar efeito de cegueira enquanto estiver AFK
+  blindness: false
+
+  # Quando o jogador estiver AFK
+  block:
+    break: true # Bloquear de quebrar blocos
+    place: true # Bloquear de colocar blocos
+    interact: true # Bloquear de interagir
+    commands: true # Bloquear executar comandos
+    chat: true # Bloquear de falar no chat
+
+  detect:
+    x: true # Quando false, não irá resetar o anti-afk ao variar a coordenada X
+    y: false # Quando false, não irá resetar o anti-afk ao variar a coordenada Y
+    z: true # Quando false, não irá resetar o anti-afk ao variar a coordenada Z
+    water: false # Quando andar na água irá resetar o anti-afk
+    lava: false # Quando andar na lava irá resetar o anti-afk
+    vehicle: false # Quando estiver montado em algo, não irá resetar o anti-afk
+    falling: false # Quando estiver caindo, não irá resetar o anti-afk
+    piston: false # Quando empurrado por pistão/slime não irá resetar o anti-afk
+
+  # Ações executadas no jogador quando entrar em AFK
+  # Ordem a ser executada: servers, commands, teleport, hologram
+  actions:
+    # Envia o jogador para o servidor abaixo
+    # Deixe '' (vazio) para não usar
+    servers:
+      - 'Lobby'
+
+    # Executa a lista de comandos abaixo
+    # Deixe '' (vazio) para não usar
+    commands:
+      - 'kick {player} Você está afk'
+
+    # Quando o jogador entrar em AFK teleportar para um local definido (/afk setlocal)
+    teleport: false
+
+    # Hologramas nos jogadores AFK
+    hologram:
+      height: 3.3
+      lines:
+        - '&cEste jogador está AFK'
+        - '[item]BARRIER' #use [item] para colocar um item
+
+    hologram-reason:
+      height: 3.7
+      lines:
+        - '&cEste jogador está AFK'
+        - '&cMotivo: &f{motivo}'
+        - ''
+        - '[item]BARRIER'
