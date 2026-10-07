@@ -1,0 +1,30 @@
+rewards:
+  reco1:
+    chance: 100.0 # chance de dar a recompensa
+    # Vai executar a cada x tempo definido abaixo
+    time: 60 # em segundos
+    # A recompensa pode ser dada várias vezes conforme o tempo
+    # (reseta ao reiniciar)
+    repeat: true
+    # Permissão para receber a recompensa
+    permission: ''
+    # Item que será dado ao player
+    item:
+      material: 'STONE:0'
+      name: '&8Pedra'
+      amount: 64
+      lore: [ '&aEu valho muito!' ]
+      # ENCHANT:LEVEL
+      # Caso não queira deixe:
+      # Enchants: []
+      enchants:
+        - 'DURABILITY:1'
+    # Comandos que será dado ao player
+    command:
+      list: [ 'give {player} stone 64' ]
+    # Mensagens que serão enviadas ao receber a recompensa
+    messages:
+      chat: [ '', '&aVocê ficou &f1m &aonline e foi recompensado!', '' ]
+      title: '&aVocê ficou &f1m &aonline<nl>&ae foi recompensado!'
+      actionbar: '&aVocê ficou &f1m &aonline e foi recompensado!'
+      sounds: 'NOTE_STICKS'

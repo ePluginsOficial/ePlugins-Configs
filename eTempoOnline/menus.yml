@@ -1,0 +1,77 @@
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  back:
+    material: 'ARROW'
+    name: '&cVoltar'
+    lore: ['&7Clique para voltar ao menu anterior.']
+  previous:
+    material: 'ARROW'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu principal
+main:
+  name: '&8Tempo Online - Principal'
+  size: 27
+  profile-slot: 11
+  missions-slot: 13
+  top-slot: 15
+  itens:
+    profile:
+      material: '{player}'
+      name: '&f{player}'
+      lore:
+        - ''
+        - '&fSeu tempo online total:'
+        - '&f -> &a{time}'
+        - ''
+        - '&fTempo online desde o último login:'
+        - '&f -> &a{current_time}'
+        - ''
+    missions:
+      material: 'CHEST'
+      name: '&aMissões'
+      lore:
+        - '&7Clique para gerenciar as missões.'
+    top:
+      material: 'BOOK_AND_QUILL'
+      name: '&aTOPs'
+      lore:
+        - '&7Clique para ver os jogadores com maior tempo online.'
+
+# Menu de missões
+missions:
+  name: '&8Tempo Online - Missões'
+  size: 27
+  slots: [ 11, 12, 13, 14, 15 ]
+  previous-slot: 18
+  next-slot: 17
+  back-slot: 9
+
+# Menu de top
+top:
+  name: '&8Tempo Online - TOPs'
+  size: 45
+  slots: [ 10, 11, 12, 13, 14, 15, 16 ]
+  previous-slot: 18
+  next-slot: 17
+  back-slot: 30
+  item:
+    name: '&a{pos}º &f{player}'
+    lore:
+      - ''
+      - '&fTempo: &a{time}'
+      - '&fPosição: &a{pos}º'
+      - ''

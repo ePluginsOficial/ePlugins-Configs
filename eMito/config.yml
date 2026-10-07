@@ -1,0 +1,70 @@
+#               _ _
+#    ___  /\/\ (_) |_ ___
+#   / _ \/    \| | __/ _ \
+#  |  __/ /\/\ \ | || (_) |
+#   \___\/    \/_|\__\___/
+#
+# By: Wittor_ (DC: _wittor ou Witu#7623)
+
+# Configuração do banco de dados
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Opções gerais de configuração do plugin
+options:
+  # Tag do Mito: usada APENAS no placeholder %emito_mito_tag%
+  # (so o mito recebe a tag, resto vazio). Nao e prefixo no nome/tab.
+  tag: '&c[MITO]'
+  # Ativar abrir o menu ao digitar /mito
+  mito-menu: true
+  # Ativar o sistema de perder mito por inatividade
+  lose: true
+  # Tempo inativo no servidor para perder o Mito
+  # em segundos
+  time-lose: 30
+  # Perder o mito por tempo apenas se tiver outro jogador on
+  lose-has-player: true
+  # Tempo que o jogador pode morrer sem perder a tag após recebê-la
+  # em segundos
+  cooldown-lose-death: 30
+
+effect:
+  # Soltar efeito de raio no novo mito
+  strike-lightning: true
+  # Spawnar morcegos ao redor do novo mito
+  spawn-bats: true
+
+# Recompensas por matar o mito
+rewards:
+  list:
+    - '100.0,give {player} diamond 1'
+
+# Comandos executados no mito
+# {new} = Novo mito
+# {old} = Antigo mito
+commands:
+  - 'give {new} diamond 1'
+  - 'give {old} stone 1'
+
+#Opções de configuração do NPC
+NPC:
+  look: true
+  hologram:
+    height: 2.9
+    lines:
+      - '&c&lMito'
+      - '&7Mito Atual &c{player}'

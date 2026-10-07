@@ -1,0 +1,48 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  login-usage:
+    - ''
+    - '&a&lLOGIN-STAFF'
+    - '&aO seu código foi enviado no discord.'
+    - '&aUse: &f/sl <codigo>'
+    - ''
+  code-usage: '&cUse: /sl <codigo>'
+  already-logged: '&cVocê já está logado.'
+  login-success: '&aVocê logou com sucesso!'
+  login-failed:
+    - '&cVocê errou o Login Staff.'
+    - '&cRelogue para tentar novamente.'
+  command-blocked: '&cVocê precisa realizar o Login-Staff antes de usar comandos.'
+  action-blocked: '&cVocê precisa realizar o Login-Staff.'
+  actionbar:
+    login-success: '&a&lSUCESSO! &aVocê realizou seu Login Staff.'
+    login-failed: '&cVocê errou o Login Staff'
+  title:
+    login-success: '&a&lSUCESSO!<nl>&7Você realizou seu Login Staff.'
+    login-failed: '&c&lERRO<nl>&7Você errou o Login Staff'
+  help:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/stafflogin &8- &7Autenticar a sessão.'
+    - ' &8> &a/stafflogin help &8- &7Exibe esta mensagem.'
+    - ''
+  help-admin:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/stafflogin &8- &7Autenticar a sessão.'
+    - ' &8> &a/stafflogin reload &8- &7Recarrega as configurações.'
+    - ' &8> &a/stafflogin help &8- &7Exibe esta mensagem.'
+    - ''

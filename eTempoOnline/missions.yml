@@ -1,0 +1,89 @@
+Missoes:
+  1:
+    # Tempo que o jogador precisa ficar online para desbloquear a recompensa
+    # em segundos
+    Time: 60
+    # Permissão para coletar a recompensa
+    Permission: ''
+    # Icone que aparece no menu quando o jogador ainda não pegou a recompensa
+    Display:
+      material: 'EMERALD'
+      glow: true
+      name: '&8Pedra'
+      lore:
+        - '&7Fique online por &f1 minuto &7e ganhe'
+        - '&f  &a1 pão.'
+    # Icone que aparece no menu depois que o jogador pegou a recompensa!
+    Display-Collected:
+      material: 'EMERALD'
+      glow: true
+      name: '&8Pedra'
+      lore:
+        - '&cVocê já coletou essa missão.'
+    # Se o ( Command -> Use ) tiver true, isso não vai funcionar
+    Item:
+      material: 'STONE'
+      glow: true
+      name: '&8Pedra'
+      amount: 64
+      lore: ['&aTu ganhou uma pedra.']
+      # ENCHANT:LEVEL
+      # Caso não queira deixe:
+      # Enchants: []
+      enchants:
+        - 'DURABILITY:1'
+    # Mensagens para o jogador que ganhou a recompensa
+    Messages:
+      actionbar: '&aParabéns, você coletou a recompensa!'
+      title: '&a&lPARABÉNS<nl>&fvocê coletou a recompensa!'
+      sound: 'LEVEL_UP'
+      chat: ['', '&aParabéns, você coletou a recompensa!', '']
+    Message-Perm: '&cVocê não permissão para coletar o desafio 1.'
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      use: false
+      list:
+        - 'give {player} stone 1'
+  2:
+    # Tempo que o jogador precisa ficar online para desbloquear a recompensa
+    # em segundos
+    Time: 120
+    # Permissão para coletar a recompensa
+    Permission: ''
+    # Icone que aparece no menu quando o jogador ainda não pegou a recompensa
+    Display:
+      material: 'EMERALD'
+      glow: true
+      name: '&8Pedra'
+      lore:
+        - '&7Fique online por &f2 minuto &7e ganhe'
+        - '&f  &a1 pão.'
+    # Icone que aparece no menu depois que o jogador pegou a recompensa!
+    Display-Collected:
+      material: 'EMERALD'
+      glow: true
+      name: '&8Pedra'
+      lore:
+        - '&cVocê já coletou essa missão.'
+    # Se o ( Command -> Use ) tiver true, isso não vai funcionar
+    Item:
+      material: 'STONE'
+      glow: true
+      name: '&8Pedra'
+      amount: 64
+      lore: ['&aTu ganhou uma pedra.']
+      enchants: []
+    # Mensagens para o jogador que ganhou a recompensa
+    Messages:
+      actionbar: '&aParabéns, você coletou a recompensa!'
+      title: '&a&lPARABÉNS<nl>&fvocê coletou a recompensa!'
+      sound: 'LEVEL_UP'
+      chat: ['', '&aParabéns, você coletou a recompensa!', '']
+    Message-Perm: '&cVocê não permissão para coletar o desafio 2.'
+    # Só será executado o comando se o "Use" estiver em true.
+    # Comandos que serão executados no jogador.
+    Command:
+      use: false
+      list:
+        - 'give {player} stone 1'

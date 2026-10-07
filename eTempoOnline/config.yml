@@ -1,0 +1,48 @@
+#      _____                           ___        _ _            
+#   __|_   _|__ _ __ ___  _ __   ___  / _ \ _ __ | (_)_ __   ___ 
+#  / _ \| |/ _ \ '_ ` _ \| '_ \ / _ \| | | | '_ \| | | '_ \ / _ \
+# |  __/| |  __/ | | | | | |_) | (_) | |_| | | | | | | | | |  __/
+#  \___||_|\___|_| |_| |_| .__/ \___/ \___/|_| |_|_|_|_| |_|\___|
+#                        |_|                                      
+# By: Wittor_ (DC: _wittor ou Witu#7623)
+
+# Configuração do banco de dados
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Delay para carregar os dados depois do login
+# Necessário para usar em servidor de mina separado
+# Recomendado: 20 ticks
+login-delay: 20
+
+# Opções gerais do plugin
+options:
+  # Tag que será dada ao TOP 1 do tempo online
+  tag: '&a[VICIADO]'
+
+  # Proibir staffs poderem contar tempo
+  # permissão para não contar: etempoonline.bypass (apenas se estiver ativado abaixo)
+  block-staff: true
+
+  # Limpar as missões coletadas ao resetar pelo /tempo reset
+  clear-collected-reset: true
+
+  # Resetar o tempo atual (de recompensas diretas) ao deslogar do servidor
+  logout-reset-actual: false
+
+  # Recompensas diretas vai pegar o Tempo Atual?
+  current-time-rewards: true

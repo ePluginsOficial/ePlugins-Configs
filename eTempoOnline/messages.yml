@@ -1,0 +1,58 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  syntax: '&cUse: /{command} {syntax}'
+  permission: '&cVocê não tem permissão para isso.'
+  reload: '&aConfiguração recarregada com sucesso!'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  target: '&cJogador &f{player} &cnão encontrado.'
+  number: '&cO argumento não é um número.'
+  changed: '&aTempo do jogador &f{player} &aalterado para &f{time}'
+  added: '&aVocê adicionou &f{amount} &ade tempo ao jogador &f{player}&a. (Total: &f{time}&a)'
+  removed: '&aVocê removeu &f{amount} &ade tempo do jogador &f{player}&a. (Total: &f{time}&a)'
+  remove-exceeds: '&cVocê não pode remover &f{amount} &cde tempo do jogador &f{player}&c, ele possui apenas &f{time}&c.'
+  reset: '&aVocê resetou o tempo do jogador &7{player}'
+  no-permission: '&cVocê não pode coletar a recompensa do desafio &f{mission}#'
+  mission-locked: '&cVocê precisa ficar online por &f{required} &cpara coletar a missão &f{mission}&c. (Falta: &f{remaining}&c)'
+  mission-claimed: '&cVocê já coletou a recompensa do desafio &f{mission}&c.'
+  player-time:
+    - ''
+    - '&aO jogador &7{player}&a está online há &8-> &f{time}'
+    - '&aVisto por último: &7{data} às {hora}'
+    - ''
+  time:
+    - ''
+    - '&a&lTEMPO! &aVocê recebeu uma recompensa de tempo'
+    - '&ause &e/tempo &apara recolher.'
+    - ''
+  help:
+   - ''
+   - '&aComandos disponíveis:'
+   - ''
+   - ' &8> &a/tempo &8- &7Abre seu menu de tempo.'
+   - ' &8> &a/tempo <player> &8- &7Vé o tempo de um jogador.'
+   - ' &8> &a/tempo top &8- &7Abre o menu de tops.'
+   - ' &8> &a/tempo missoes &8- &7Abre o menu de missões.'
+   - ' &8> &a/tempo help &8- &7Exibe esta mensagem.'
+   - ''
+  help-admin:
+   - ''
+   - '&aComandos disponíveis:'
+   - ''
+   - ' &8> &a/tempo &8- &7Abre seu menu de tempo.'
+   - ' &8> &a/tempo <player> &8- &7Vé o tempo de um jogador.'
+   - ' &8> &a/tempo set <player> <tempo> &8- &7Seta o tempo de um jogador (em segundos).'
+   - ' &8> &a/tempo add <player> <tempo> &8- &7Adiciona tempo a um jogador (em segundos).'
+   - ' &8> &a/tempo remove <player> <tempo> &8- &7Remove tempo de um jogador (em segundos).'
+   - ' &8> &a/tempo reset <player> &8- &7Reseta o tempo de um jogador.'
+   - ' &8> &a/tempo top &8- &7Abre o menu de tops.'
+   - ' &8> &a/tempo missoes &8- &7Abre o menu de missões.'
+   - ' &8> &a/tempo reload &8- &7Recarrega as configurações do plugin.'
+   - ' &8> &a/tempo help &8- &7Exibe esta mensagem.'
+   - ''

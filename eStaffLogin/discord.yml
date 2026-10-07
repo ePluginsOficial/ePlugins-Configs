@@ -1,0 +1,84 @@
+#       _ _                       _
+#    __| (_)___  ___ ___  _ __ __| |
+#   / _` | / __|/ __/ _ \| '__/ _` |
+#  | (_| | \__ \ (_| (_) | | | (_| |
+#   \__,_|_|___/\___\___/|_|  \__,_|
+#
+# Sistema de WebHook
+
+# Webhook para cada grupo
+# Será enviada para o canal definido
+webhooks:
+  # Nome qualquer
+  staff:
+    # Permissão para ser reconhecido nesse grupo
+    permission: 'estafflogin.staff'
+    # Deixe vazio par não usar o sistema
+    URL: ''
+
+# Sistema de logs
+options:
+  # Webhook que irá enviar as logs
+  # Deixe vazio para não usar o sistema
+  webhook: ''
+  # Tipos de log
+  types:
+    login-success: 'Realizou o Login-Staff no Servidor!'
+    logout: 'Saiu do Servidor!'
+    login-failed: 'Errou o Login-Staff!'
+  # Embed enviado
+  log:
+    Title: ':mag_right: LOGS STAFF-LOGIN'
+    Thumbnail: ''
+    Color: '#00A8FF'
+    Content: ''
+    Footer:
+      Text: 'Todos os direitos reservados.'
+      Image: ''
+    Description: ''
+    Fields:
+      player:
+        Inline: true
+        Header: 'Usuário'
+        Content: '{player}'
+      action:
+        Inline: true
+        Header: 'Ação'
+        Content: '{action}'
+      ip:
+        Inline: true
+        Header: 'IP'
+        Content: '{ip}'
+      date:
+        Inline: true
+        Header: 'Data'
+        Content: '{date} às {hour}'
+
+# Embed da verificação
+embed:
+  verification:
+    Title: ':incoming_envelope: Realize seu Login-Staff'
+    Thumbnail: ''
+    Color: '#00A8FF'
+    Content: ''
+    Footer:
+      Text: 'Todos os direitos reservados.'
+      Image: ''
+    Description: ''
+    Fields:
+      player:
+        Inline: true
+        Header: 'Usuário'
+        Content: '{player}'
+      code:
+        Inline: true
+        Header: 'Código'
+        Content: '{code}'
+      ip:
+        Inline: true
+        Header: 'IP'
+        Content: '{ip}'
+      date:
+        Inline: true
+        Header: 'Data'
+        Content: '{date} às {hour}'

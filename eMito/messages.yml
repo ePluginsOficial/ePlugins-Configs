@@ -1,0 +1,73 @@
+#
+#    /\/\   ___  ___ ___  __ _  __ _  ___  ___
+#   /    \ / _ \/ __/ __|/ _` |/ _` |/ _ \/ __|
+#  / /\/\ \  __/\__ \__ \ (_| | (_| |  __/\__ \
+#  \/    \/\___||___/___/\__,_|\__, |\___||___/
+#                              |___/
+# Mensagens gerais do plugin
+
+messages:
+  syntax: '&cUse: /{command} {syntax}'
+  target: '&cJogador &f{player} &cnão encontrado.'
+  permission: '&cVocê não tem permissão para fazer isto.'
+  reload: '&aConfigurações recarregadas com sucesso.'
+  console: '&cApenas jogadores in-game podem realizar esta ação.'
+  number: '&cO argumento não é um número.'
+  cancel: '&cVocê cancelou a ação!'
+  mito-defined: '&aVocê definiu o jogador &f{player} &acomo o novo mito.'
+  npc-set: '&aNPC do mito criado com sucesso.'
+  npc-del: '&aNPC do mito removido com sucesso.'
+  npc-no-del: '&cO npc do mito não está setado!'
+  mito-none: '&c&l[MITO] &cAtualmente não há nenhum mito.'
+  mito-actual:
+    - ''
+    - '&c&l[MITO] &cO(a) jogador(a) &f{player}&c é o mito atual.'
+    - ''
+  mito-join:
+    - ''
+    - '&c&l[MITO] &cO(a) jogador(a) &f{player}&c acabou de entrar no servidor.'
+    - ''
+  mito-left:
+    - ''
+    - '&c&l[MITO] &cO(a) jogador(a) &f{player}&c acabou de sair do servidor.'
+    - ''
+  mito-death:
+    title: '&f{killer}<nl>&cNovo Mito'
+    actionbar: '&c&l[MITO] &cO(a) jogador(a) &f{player}&c acabou de morrer e perdeu a TAG para o jogador(a) &f{killer}'
+    chat: [ '', '&c&l[MITO] &cO(a) jogador(a) &f{player}&c acabou de morrer e perdeu a TAG para o jogador(a) &f{killer}', '' ]
+    sound: 'ENDERDRAGON_DEATH'
+  mito-death-delay:
+    title: ''
+    actionbar: '&c&l[MITO] &cO(a) jogador(a) &f{player}&c acabou de morrer para o jogador(a) &f{killer}'
+    chat: [ '', '&c&l[MITO] &cO(a) jogador(a) &f{player}&c acabou de morrer para o jogador(a) &f{killer}&c, mas ele não perdeu a tag por conta do delay :o', '&fMais cuidado da próxima, você não vai ter o delay ao seu favor!', '' ]
+    sound: ''
+  mito-delay:
+    title: '&f{player}<nl>&cNovo Mito'
+    actionbar: '&c&l[MITO] &cO(a) jogador(a) &f{player}&c perdeu a TAG por ficar muito tempo OFFLINE.'
+    chat: [ '', '&c&l[MITO] &cO(a) jogador(a) &f{player}&c perdeu a TAG por ficar muito tempo OFFLINE.', '&cA TAG foi dada aleatóriamente para o(a) jogador(a) &f{receiver}.', '' ]
+    sound: ''
+  mito-define:
+    title: '&f{player}<nl>&cNovo Mito'
+    actionbar: '&c&l[MITO] &cO(a) jogador(a) &f{player}&c é o novo MITO do servidor!'
+    chat: [ '', '&c&l[MITO] &cO(a) jogador(a) &f{player}&c é o novo MITO do servidor!', '' ]
+    sound: 'ENDERDRAGON_GROWL'
+  help:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/mito &8- &7Abre o menu principal.'
+    - ' &8> &a/mito top &8- &7Abre o menu de tops.'
+    - ' &8> &a/mito help &8- &7Exibe esta mensagem.'
+    - ''
+  help-admin:
+    - ''
+    - '&aComandos disponíveis:'
+    - ''
+    - ' &8> &a/mito &8- &7Abre o menu principal.'
+    - ' &8> &a/mito top &8- &7Abre o menu de tops.'
+    - ' &8> &a/mito set <player> &8- &7Define o mito a um usuário.'
+    - ' &8> &a/mito random &8- &7Define o mito a um usuário aleatório.'
+    - ' &8> &a/mito setnpc &8- &7Define a localização do NPC do mito.'
+    - ' &8> &a/mito delnpc &8- &7Remove o NPC do mito.'
+    - ' &8> &a/mito reload &8- &7Recarrega as configurações.'
+    - ' &8> &a/mito help &8- &7Exibe esta mensagem.'

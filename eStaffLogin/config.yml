@@ -1,0 +1,90 @@
+#        __ _         __  __   __             _
+#    ___/ _\ |_ __ _ / _|/ _| / /  ___   __ _(_)_ __
+#   / _ \ \| __/ _` | |_| |_ / /  / _ \ / _` | | '_ \
+#  |  __/\ \ || (_| |  _|  _/ /__| (_) | (_| | | | | |
+#   \___\__/\__\__,_|_| |_| \____/\___/ \__, |_|_| |_|
+#                                       |___/
+# By: Wittor_ (DC: _wittor ou Witu#7623)
+
+# Configurações do banco de dados.
+database:
+  # Determina o tipo de banco de dados. Valores válidos: [SQLITE, MYSQL, HIKARI (recomendado)]
+  storage-type: SQLITE
+
+  # Dados para conexão ao banco de dados MYSQL.
+  data:
+    # Endereço de conexão do banco de dados. [EX: 127.0.0.1]
+    host: localhost
+    # Porta de conexão do banco de dados. [EX: 3306]
+    port: 3306
+    # Nome do banco de dados a ser conectado. [EX: minecraft]
+    database: ''
+    # Usuário de conexão. [EX: root]
+    username: ''
+    # Senha do usuário de conexão: [EX: 123]
+    password: ''
+
+# Opções gerais de configuração do plugin
+options:
+  # Será solicitado o loginstaff após logar
+  # Só é compatível com o nLogin
+  require-after-login: true
+  # Salvar IP do staff ao logar e não pedir mais o código pro user+IP
+  save-ip: false
+  # Forçar gamemode survival?
+  force-survival-gamemode: true
+  # Quantia de caracteres do código de verificação
+  code-length: 6
+  # Limpar chat ao entrar no servidor e quando realizar o login staff
+  clear-chat: true
+  # Remover os itens ao logar
+  # É devolvido após logar
+  clear-inventory: true
+  # ── Integração com proxy (Velocity) ──────────────────────────────────
+  # Se ativo, o estado de Login-Staff (jogador logado/aguardando código)
+  # NÃO é mais limpo automaticamente ao sair deste servidor. Em vez disso,
+  # ele só é limpo quando o plugin eStaffLoginProxy (instalado no proxy
+  # Velocity) confirmar que o jogador desconectou de verdade da REDE
+  # inteira — e não apenas trocou para outro servidor (ex.: Lobby -> Rankup).
+  #
+  # Isso evita que o jogador volte "preso" ao Lobby (sem poder se mover,
+  # sem receber um novo código) quando o outro servidor reinicia ou cai.
+  #
+  # Deixe como 'false' caso este servidor NÃO esteja atrás de um proxy
+  # Velocity com o eStaffLoginProxy instalado — nesse caso o comportamento
+  # antigo (limpar o estado a cada saída) é mantido.
+  use-proxy-sync: false
+  # Ações que serão executadas se errar o captcha
+  login-failed:
+    # Expulsar o jogador
+    kick: true
+    # Executar comandos no jogador
+    # {player} para passar o player no comando
+    commands: ['']
+  # Enviar o embed no privado (somente para quem tem eDiscordHook)
+  discord-hook:
+    # Embed configurada no eDiscordHook
+    # Deixe vazio para não usar o sistema
+    embed: 'estafflogin_verification'
+  # Mensagens que irão ser enviadas no chat do servidor, ao entrar e sair
+  # Aceita placeholder {player}
+  chat-messages:
+    # Deixe vazia para não usar
+    login: ''
+    # Deixe vazia para não usar
+    leave: ''
+  # Sons quando o jogador logar ou errar o captcha
+  # Formato: SOM:VOLUME:PITCH
+  sounds:
+    login-success: 'LEVEL_UP:1:1'
+    login-failed: 'VILLAGER_NO:1:1'
+  # Lista de comandos liberados no loginstaff (deixe os do próprio plugin também)
+  allowed-commands:
+    - '/login'
+    - '/sl'
+    - '/stafflogin'
+    - '/logar'
+    - '/registro'
+    - '/registrar'
+    - '/register'
+    - '/autenticar'
