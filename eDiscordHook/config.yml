@@ -91,6 +91,13 @@ options:
   # %ediscordhook_tag%
   tag: '&a[Vinculado]'
 
+  # Cargo do mito (integração com o plugin eMito)
+  # Entregue no Discord ao jogador que estiver com a tag de mito no servidor,
+  # somente se ele estiver vinculado. Removido de quem perde a tag.
+  mito:
+    # ID do cargo no discord
+    cargoID: ''
+
   # Enviar mensagem no chat apenas se estiver vinculado
   chat-linked: false
 
