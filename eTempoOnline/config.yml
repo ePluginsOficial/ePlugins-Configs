@@ -35,10 +35,6 @@ options:
   # Tag que será dada ao TOP 1 do tempo online
   tag: '&a[VICIADO]'
 
-  # Proibir staffs poderem contar tempo
-  # permissão para não contar: etempoonline.bypass (apenas se estiver ativado abaixo)
-  block-staff: true
-
   # Limpar as missões coletadas ao resetar pelo /tempo reset
   clear-collected-reset: true
 
