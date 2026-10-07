@@ -1,1 +1,3 @@
-Repositório de configurações da ePlugins
+# ePlugins-Configs
+
+Repositório de configurações da **ePlugins ©**
