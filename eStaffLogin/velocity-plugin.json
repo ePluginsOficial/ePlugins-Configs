@@ -1,8 +1,0 @@
-{
-  "id": "estafflogin",
-  "name": "eStaffLogin",
-  "version": "${project.version}",
-  "description": "Sistema de Login-Staff. No Velocity, monitora desconexoes reais da rede.",
-  "authors": ["Witt0r"],
-  "main": "br.com.eplugins.estafflogin.VelocityMain"
-}
