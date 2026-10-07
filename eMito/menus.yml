@@ -46,7 +46,7 @@ main:
         - ''
     top:
       material: 'BOOK_AND_QUILL'
-      name: '&a&lTOP'
+      name: '&aTOPs'
       lore:
         - '&7Veja os jogadores que mais'
         - '&7destacaram no servidor.'
