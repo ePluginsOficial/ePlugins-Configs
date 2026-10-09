@@ -1,7 +1,7 @@
-Steps:
+steps:
   location1: # Nome qualquer
       # Order dos passos
-      Order: 1
+      order: 1
       # Localização desse passo
       location: ''
       # Tempo que o jogador vai ficar nesse passo

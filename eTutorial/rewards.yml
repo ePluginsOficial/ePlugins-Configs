@@ -1,19 +1,18 @@
-Rewards:
-  Reco1:
+rewards:
+  reco1:
     # Item que será dado ao jogador.
-    Item:
-      Material: 'STONE'
-      Name: '&aPedra Mística'
-      Amount: 1
-      Lore:
+    item:
+      material: 'STONE'
+      name: '&aPedra Mística'
+      amount: 1
+      lore:
         - '&aEu valho muito!'
       # ENCHANT:LEVEL
       # Caso não queira deixe:
       # Enchants: []
-      Enchants: []
-    # Só será executado o comando se o "Use" estiver em true.
-    # Comandos que serão executados no jogador.
-    Command:
-      Use: false
-      List:
+      enchants: []
+    # Se a lista tiver ao menos um comando, executa os comandos.
+    # Lista vazia = entrega o item acima.
+    command:
+      list:
         - 'give {player} stone 1'

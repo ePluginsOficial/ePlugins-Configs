@@ -48,14 +48,14 @@ options:
   commands: ['give {player} diamond 1']
 
   # Sistema de recompensa
-  Reward:
+  reward:
     # A recompensa somente vai ser entregue na primeira vez?
     first-time: true
     
     # Recompensas entregues ao jogador quando concluir o tutorial
     # chance,recompensa
     rewards:
-      - '100,Reco1'
+      - '100,reco1'
     
     # Mensagens enviadas apos concluir o tutorial
     mensagens: 
@@ -66,7 +66,7 @@ options:
       
 #Opções de configuração do NPC
 NPC:
-  skin: 'Wittor_'
+  skin: 'Witt0r'
   look: true
   hologram:
     height: 2.9

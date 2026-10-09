@@ -1,32 +1,47 @@
-# Menu principal
-main:
-  name: '&8Conta do Discord'
-  size: 27
-  link-linked-slot: 12
-  discord-slot: 14
+#
+#    /\/\   ___ _ __  _   _ ___
+#   /    \ / _ \ '_ \| | | / __|
+#  / /\/\ \  __/ | | | |_| \__ \
+#  \/    \/\___|_| |_|\__,_|___/
+#
+# Sistema de menus.
+
+# Setas dos menus.
+arrows:
+  previous:
+    material: 'ARROW'
+    name: '&cAnterior'
+    lore: ['&7Clique para ir à página anterior.']
+  next:
+    material: 'ARROW'
+    name: '&aPróximo'
+    lore: ['&7Clique para ir à próxima página.']
+
+# Menu de amigos
+friends:
+  name: '&8Baú - Amigos'
+  size: 54
+  slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  previous-slot: 9
+  next-slot: 17
   items:
-    link:
+    add-slot: 27
+    empty-slot: 22
+    add:
+      material: '22d145c93e5eac48a661c6f27fdaff5922cf433dd627bf23eec378b9956197'
+      name: '&aAdicionar Amigo'
+      lore:
+        - '&7Clique aqui para adicionar'
+        - '&7amigos para poder acessar o'
+        - '&7baú desta loja.'
+    friend:
       material: '{player}'
-      name: '&aMinha conta'
+      name: '&a{player}'
       lore:
         - ''
-        - ' &fConta vinculada: &7Nenhuma'
+        - '&7Botão &fDIREITO: &7Para remover.'
         - ''
-        - '&aClique para vincular sua conta'
-    linked:
-      material: '{player}'
-      name: '&aMinha conta'
-      lore:
-        - ''
-        - ' &fConta vinculada: &7{discord_tag}'
-        - ' &fID da conta: &7{discord_id}'
-        - ''
-        - ' &fData da vinculação: &7{data} às {hora}'
-        - ''
-        - '&aClique para desvincular sua conta'
-    discord:
-      material: '4d42337be0bdca2128097f1c5bb1109e5c633c17926af5fb6fc20000011aeb53'
-      name: '&aDiscord do servidor'
-      lore:
-        - '&7Clique para entrar no discord'
-        - '&7do nosso servidor.'
+    empty:
+      material: 'WEB'
+      name: '&cVazio...'
+      lore: [ '&7Você não possui nenhum', '&7amigo cadastrado.' ]
