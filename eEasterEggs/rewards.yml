@@ -1,5 +1,5 @@
 rewards:
-  Reco1:
+  reco1:
     # Item que será dado ao jogador.
     item:
       material: 'STONE'
@@ -13,6 +13,5 @@ rewards:
     # Só será executado o comando se o "Use" estiver em true.
     # Comandos que serão executados no jogador.
     command:
-      use: false
       list:
         - 'give {player} diamond 1'
