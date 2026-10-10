@@ -7,34 +7,36 @@
 # Discord: discord.eplugins.com.br
 # Site: eplugins.com.br
 
-# Delay (em segundos) para poder colocar torres de cactos
-cooldown-time: 3
+# Opções gerais do plugin
+options:
+  # Delay (em segundos) para poder colocar torres de cactos
+  cooldown-time: 3
 
-# A torre só será colocado onde houver ar.
-only-air: true
+  # A torre só será colocado onde houver ar.
+  only-air: true
 
-# Permitir colocar torres de cactos apenas em plots
-plots: true 
+  # Permitir colocar torres de cactos apenas em plots
+  plots: true
 
-# Mundos onde não poderá colocar torres de Cactos
-worlds-blacklist: ['']
-
-# Configurações de preview 
-preview: 
-  # Ativar sistema de preview das torres de cactos
-  enabled: true 
-  
-  # Distância máxima para mostrar a preview (em blocos)
-  max-distance: 5
-  
-  # Intervalo de atualização da preview (em ticks, 1 segundo = 20 ticks)
-  interval-update: 1
-  
-  # A visualização só será ativada se o jogador segurar shift
-  shift: false
-
-  # Bloco que aparecerá no lugar do bloco que não pode ser colocado durante a preview
-  cannot-place: 'STAINED_GLASS:14' 
-  
-  # Mundos onde o sistema de preview não será exibida
+  # Mundos onde não poderá colocar torres de Cactos
   worlds-blacklist: ['']
+
+  # Configurações de preview 
+  preview: 
+    # Ativar sistema de preview das torres de cactos
+    enabled: true 
+  
+    # Distância máxima para mostrar a preview (em blocos)
+    max-distance: 5
+  
+    # Intervalo de atualização da preview (em ticks, 1 segundo = 20 ticks)
+    interval-update: 0.5
+  
+    # A visualização só será ativada se o jogador segurar shift
+    shift: false
+
+    # Bloco que aparecerá no lugar do bloco que não pode ser colocado durante a preview
+    cannot-place: 'STAINED_GLASS:14' 
+  
+    # Mundos onde o sistema de preview não será exibida
+    worlds-blacklist: ['']
